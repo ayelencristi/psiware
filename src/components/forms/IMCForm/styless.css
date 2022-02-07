@@ -1,0 +1,13 @@
+.imc-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.form {
+    width: 60%;
+    border: 1px solid #778da9;
+    border-radius: 2%;
+    padding: 15px;
+}
