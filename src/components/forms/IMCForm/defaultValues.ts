@@ -9,5 +9,5 @@ export type IMCFormFields = {
     name: string,
     age: string,
     height: string,
-    weigth: string
+    weight: string
 }

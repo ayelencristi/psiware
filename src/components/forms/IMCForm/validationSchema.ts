@@ -10,7 +10,7 @@ export const validationSchema = yup.object().shape({
         .string()
         .required(FORM_VALIDATIONS.REQUIRED),
     height: yup
-        .number()
+        .string()
         .required(FORM_VALIDATIONS.REQUIRED),
     weight: yup
         .number()
