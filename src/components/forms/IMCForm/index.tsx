@@ -36,12 +36,12 @@ const IMCForm: FC = () => {
 
                     <Form.Group className="mb-3">
                         <Form.Label>Estatura</Form.Label>
-                        <Form.Control type="number" {...register('height')} placeholder="ej.: 1.60" />
+                        <Form.Control type="text" {...register('height')} placeholder="ej.: 1.60" />
                     </Form.Group>
 
                     <Form.Group className="mb-3">
                         <Form.Label>Peso</Form.Label>
-                        <Form.Control type="number" {...register('weight')} placeholder="ej.: 65" />
+                        <Form.Control type="text" {...register('weight')} placeholder="ej.: 65" />
                     </Form.Group>
 
                     <Button variant="dark" type="submit">

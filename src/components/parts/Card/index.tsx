@@ -2,9 +2,6 @@ import { useState } from "react"
 import { Card } from "react-bootstrap"
 import { useIMC } from "../../../hooks/useIMC"
 
-type Props = {
-    result?= fx()
-}
 
 const ResultCard = () => {
 
