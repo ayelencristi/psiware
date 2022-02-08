@@ -6,7 +6,6 @@ import { defaultValues, IMCFormFields } from './defaultValues'
 import { validationSchema } from "./validationSchema"
 import "./styless.css"
 import { useIMC } from '../../../hooks/useIMC';
-import { DataUser, Result } from '../../../types/models';
 
 const IMCForm: FC = () => {
 
@@ -17,7 +16,7 @@ const IMCForm: FC = () => {
         resolver: yupResolver(validationSchema),
     });
 
-    const onSubmit = (data: DataUser) => {
+    const onSubmit = (data: IMCFormFields) => {
         console.log(data)
         imc(data)
     }
@@ -32,17 +31,17 @@ const IMCForm: FC = () => {
 
                     <Form.Group className="mb-3">
                         <Form.Label>Edad</Form.Label>
-                        <Form.Control type="age" {...register('age')} placeholder="ej.: 25" />
+                        <Form.Control type="number" {...register('age')} placeholder="ej.: 25" />
                     </Form.Group>
 
                     <Form.Group className="mb-3">
                         <Form.Label>Estatura</Form.Label>
-                        <Form.Control type="height" {...register('height')} placeholder="ej.: 1.60" />
+                        <Form.Control type="number" {...register('height')} placeholder="ej.: 1.60" />
                     </Form.Group>
 
                     <Form.Group className="mb-3">
                         <Form.Label>Peso</Form.Label>
-                        <Form.Control type="weight" {...register('weight')} placeholder="ej.: 65" />
+                        <Form.Control type="number" {...register('weight')} placeholder="ej.: 65" />
                     </Form.Group>
 
                     <Button variant="dark" type="submit">
