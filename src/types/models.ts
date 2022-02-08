@@ -1,9 +1,8 @@
-export type Result = {
-    id: string,
+export type DataUser = {
     name: string,
-    age: number,
+    age?: number,
     height: number,
     weight: number
 }
 
-export type AddResultType = Omit<Result, 'id'>;
+export type Result = string

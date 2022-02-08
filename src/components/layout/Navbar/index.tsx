@@ -9,10 +9,6 @@ const NavBar: FC = () => {
                 <Navbar.Brand href="/">
                     <h1 className="logo">Cáculo del IMC</h1>
                 </Navbar.Brand>
-                <Nav className="mr-3">
-                    <Nav.Link href="/">Home</Nav.Link>
-                    <Nav.Link href="/results">Resultados</Nav.Link>
-                </Nav>
             </Container>
         </Navbar>
     )
