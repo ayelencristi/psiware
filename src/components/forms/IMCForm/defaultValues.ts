@@ -4,3 +4,10 @@ export const defaultValues = {
     height: '',
     weight: ''
 }
+
+export type IMCFormFields = {
+    name: string,
+    age: string,
+    height: string,
+    weigth: string
+}

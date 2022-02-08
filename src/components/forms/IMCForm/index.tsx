@@ -2,19 +2,17 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import { FC } from "react";
 import { Button, Form } from "react-bootstrap";
 import { useForm } from "react-hook-form"
-import { defaultValues } from './defaultValues'
+import { defaultValues, IMCFormFields } from './defaultValues'
 import { validationSchema } from "./validationSchema"
 import "./styless.css"
 import { useIMC } from '../../../hooks/useIMC';
 import { DataUser, Result } from '../../../types/models';
 
-
-
 const IMCForm: FC = () => {
 
     const { imc } = useIMC()
 
-    const { handleSubmit, register } = useForm<{}>({
+    const { handleSubmit, register } = useForm<IMCFormFields>({
         defaultValues,
         resolver: yupResolver(validationSchema),
     });

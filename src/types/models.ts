@@ -1,6 +1,6 @@
 export type DataUser = {
     name: string,
-    age?: number,
+    age?: string,
     height: number,
     weight: number
 }
