@@ -29,7 +29,7 @@ const IMCForm: FC = () => {
                 <Form className="form" onSubmit={handleSubmit(onSubmit)}>
                     <Form.Group className="mb-3">
                         <Form.Label>Nombre</Form.Label>
-                        <Form.Control type="text" {...register('name')} placeholder="ej.: Ayelén" />
+                        <Form.Control type="name" {...register('name')} placeholder="ej.: Ayelén" />
                     </Form.Group>
 
                     <Form.Group className="mb-3">
@@ -44,7 +44,7 @@ const IMCForm: FC = () => {
 
                     <Form.Group className="mb-3">
                         <Form.Label>Peso</Form.Label>
-                        <Form.Control type="weight" placeholder="ej.: 65" />
+                        <Form.Control type="weight" {...register('weight')} placeholder="ej.: 65" />
                     </Form.Group>
 
                     <Button variant="dark" type="submit">
