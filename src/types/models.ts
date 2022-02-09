@@ -1,1 +1,1 @@
-export type Result = string;
+export type Result = string | undefined;

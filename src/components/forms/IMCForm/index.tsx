@@ -7,19 +7,22 @@ import { validationSchema } from "./validationSchema"
 import "./styless.css"
 import { useIMC } from '../../../hooks/useIMC';
 
-const IMCForm: FC = () => {
+type Props = {
+    handleIMC: (data: IMCFormFields) => void;
+}
 
-    const { imc } = useIMC()
+const IMCForm: FC<Props> = ({ handleIMC }) => {
 
-    const { handleSubmit, register } = useForm<IMCFormFields>({
+
+    const { handleSubmit, register, formState } = useForm<IMCFormFields>({
         defaultValues,
         resolver: yupResolver(validationSchema),
     });
 
     const onSubmit = (data: IMCFormFields) => {
-        console.log(data)
-        imc(data)
+        handleIMC(data)
     }
+
     return (
         <div className="container">
             <div className="imc-form">
