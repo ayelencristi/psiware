@@ -1,1 +1,1 @@
-export { ResultCard } from "./Card"
+export { ResultsCard } from "./ResultsCard"
