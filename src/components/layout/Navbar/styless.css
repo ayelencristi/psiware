@@ -1,7 +1,18 @@
 .nav-bar {
-    background-color: #1b263b;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 25px 0;
+    box-shadow: 0 0 29px 0 rgb(134 134 134 / 25%);
+    position: fixed;
+    top: 0;
+    background-color: white;
+    align-items: center;
+    z-index: 1;
 }
 .logo {
-    color: white;
+    color: black;
     font-weight: 700;
 }

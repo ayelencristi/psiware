@@ -1,15 +1,16 @@
 import { FC } from 'react'
-import { Container, Navbar } from 'react-bootstrap'
+import "./styless.css"
 
 const Footer: FC = () => {
     return (
-        <Navbar className="nav-bar" variant="dark">
-            <Container>
-                <Navbar.Brand href="/">
-                    <p className="logo">Ayelén Cristi</p>
-                </Navbar.Brand>
-            </Container>
-        </Navbar>
+        <footer>
+            <div className='footer'>
+                <div className="nav-footer">
+                    <a className='logo' href="https://ayelencristi.github.io/portfolio/">Hacé click y conocé un poco más sobre mí!</a>
+                </div>
+            </div>
+            <p className="hecho-con-amor">Hecho con ❤️ por Aye</p>
+        </footer>
     )
 }
 
