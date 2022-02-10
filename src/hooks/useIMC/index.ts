@@ -8,7 +8,7 @@ const useIMC = () => {
 
     const imcFunction = (data: IMCFormFields) => {
 
-        const result = parseInt(data.weight) / Math.pow(parseInt(data.height), 2)
+        const result = parseInt(data.weight) / Math.pow(Number(data.height), 2)
 
         if (result > 25) {
             setAnswer(`${data.name}, estás por encima del peso ideal`)
