@@ -39,7 +39,7 @@ const IMCForm: FC<Props> = ({ handleIMC }) => {
 
                     <Form.Group className="mb-3">
                         <Form.Label>Estatura</Form.Label>
-                        <Form.Control type="text" {...register('height')} placeholder="ej.: 1.60" />
+                        <Form.Control type="text" {...register('height')} placeholder="en centímetros, ej.: 1.65" />
                     </Form.Group>
 
                     <Form.Group className="mb-3">
