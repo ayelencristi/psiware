@@ -11,7 +11,7 @@ const ResultsCard: FC<Props> = ({ data }) => {
         <div className="container">
             <div className="imc-form">
                 <Card className="form">
-                    <h4>Resultado IMC</h4>
+                    <h4 className="logo">Resultado IMC</h4>
                     <Card.Body>{data}</Card.Body>
                 </Card>
             </div>
