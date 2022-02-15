@@ -5,7 +5,6 @@ import { useForm } from "react-hook-form"
 import { defaultValues, IMCFormFields } from './defaultValues'
 import { validationSchema } from "./validationSchema"
 import "./styless.css"
-import { useIMC } from '../../../hooks/useIMC';
 
 type Props = {
     handleIMC: (data: IMCFormFields) => void;
@@ -14,7 +13,7 @@ type Props = {
 const IMCForm: FC<Props> = ({ handleIMC }) => {
 
 
-    const { handleSubmit, register, formState } = useForm<IMCFormFields>({
+    const { handleSubmit, register } = useForm<IMCFormFields>({
         defaultValues,
         resolver: yupResolver(validationSchema),
     });
