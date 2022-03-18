@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/psiware/static/css/main.341dd985.css",
+    "main.js": "/psiware/static/js/main.0adbc891.js",
+    "index.html": "/psiware/index.html",
+    "main.341dd985.css.map": "/psiware/static/css/main.341dd985.css.map",
+    "main.0adbc891.js.map": "/psiware/static/js/main.0adbc891.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.341dd985.css",
+    "static/js/main.0adbc891.js"
+  ]
+}
